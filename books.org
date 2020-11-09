@@ -1,0 +1,9 @@
+* this is my first exports
+* tables
+| some | data     |
+|------+----------|
+|   12 | my shoe  |
+|   14 | yet more |
+
+
+#+TITLE:   A GENTLE  introducton

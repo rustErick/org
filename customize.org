@@ -1,0 +1,50 @@
+* Listar los firmwares
+** dmesg
+** install packages missing firmware amdgpu
+*** sudo apt install xserver-xorg-video-amdgpu firmware-linux firmware-linux-nonfree libdrm-amdgpu1
+** install vulkan the best major for graphis
+*** sudo apt install vulkan-tools vulkan-utils vulkan-validationlayers mesa-vulkan-drivers libvulkan1
+* show porcentage of battery
+** search -> Tweaks -> top bar -> on
+* activate anticlick
+** search -> Tweaks -> Keyboard & Mouse -> Mouse Click Emulation ->are -> on
+* customize the format of the prompt
+** cd -> vi .bashrc -> PS1=''
+* install emacs
+** sudo apt install -y emacs
+* install sudo
+** root -  apt update
+** root - apt install sudo
+* add sudo in your terminal
+** su -> apt install sudo
+** vi /etc/sudoers -> add the next line -> name-user ALL=(ALL:ALL) ALL
+** use sudo whitout enter password -> vi /etc/sudoers -> add the next line -> name-use ALL=(ALL:ALL) NOPASSWD:ALL
+* intall git
+** sudo apt update
+** sudo apt upgrade
+** sudo apt install -y git
+* install tmux
+** sudo apt update
+** sudo apt install -y tmux
+* install curl
+** sudo apt update
+** sudo apt install -y curl
+* install node and npm
+** sudo apt update
+** sudo apt install -y nodejs npm
+** curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+** sudo apt install -y nodejs
+** deepin
+*** curl -sL "https://deb.nodesource.com/setup_12.x" | sed "s|\$(lsb_release -c -s)|\"buster\"|" | sudo -E bash -
+* install yarn
+** curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+** echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+** sudo apt update && sudo apt install yarn
+** install create-react-app
+** sudo npm install -g -y create-react-app
+* install rust
+** sudo apt update
+** curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+* intall pipk
+** sudo apt update
+** sudo apt install -y python3-pip
